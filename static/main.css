@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&family=Quicksand:wght@300&display=swap');
+
+.App {
+  background-image: url(basicMeterBackground.jpeg);
+  background-size: calc(200vh + 100vw);
+  background-position-x: center;
+  text-align: center;
+  font-family: 'Quicksand', sans-serif;
+  color: white;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.relative {
+  position: relative;
+}
+
+.heading {
+  font-size: calc(20px + 8vh);
+  margin-bottom: -15px;
+}
+
+.subhead {
+  font-size: calc(10px + 3vh);
+  color: white;
+}
+
+.yab {
+  /* font-size: calc(12px + 5vh); */
+  font-size: calc(20px + 8vh);
+}
+
+.bp {
+  /* font-size: calc(25px + 8vh); */
+  font-size: calc(40px + 15vh);
+  margin-top: -10px;
+  margin-bottom: -10px;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+  border-radius: 200px;
+}
+
+.button {
+  /* text-decoration: none; */
+  /* cursor: pointer; */
+  display: inline-block;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  background-color: rgb(223, 137, 180);
+  /* background: none; */
+  font-family: 'Quicksand', sans-serif;
+  text-align: center;
+  font-size: calc(10px + 3vh);
+  padding: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  /* width: 200px; */
+  transition: 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button:hover {
+  /* width: 10%; */
+  background-color: #1DB954;
+  color: white;
+  transition: 0.5s;
+}
+
+hr {
+  opacity: 0.3;
+}
+
+a {
+  color: #000000;
+  text-decoration: underline 0.1px; 
+}
+
+a:visited {
+  color: #000000;
+}
+
+a:hover {
+  color: white;
+}
+
+.container {
+  display: block;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  position: absolute;
+  top: 15%;
+}
+
+.showcase {
+  padding: 0 30px 0 30px;
+  margin-bottom: 20px;
+  color: black;
+  border: rgba(0, 0, 0, 0.13) solid 1px;
+  width: 80%;
+  cursor: pointer;
+}
+
+.showcase a {
+  text-decoration: none;
+}
+
+.showcase h3 {
+  color: black;
+  text-decoration: underline;
+}
+
+.showcase:hover {
+  background-color: black;
+  color: white;
+}
+
+.showcase:hover h3 {
+  color: white;
+}
+
+blockquote {
+  opacity: 1;
+}
+
+body header section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+body header section div {
+  margin-bottom: 20px;
+}
+
+body > section {
+  margin-top: 5px;
+}
+
+@media (min-width: 1200px) { 
+  blockquote {
+      border-left: #37352F 3px solid;
+      width: 55%;
+      margin-bottom: 0;
+  }
+  .showcase {
+      width: 40%;
+      margin-left: 20px;
+  }
+}

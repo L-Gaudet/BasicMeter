@@ -1,0 +1,17 @@
+runtime: python
+entrypoint: gunicorn -b :$PORT server:app
+env: flex
+runtime_config:
+ python_version: 3
+
+handlers:
+- url: /static
+  static_dir: static
+
+- url: /.*
+  script: server.py
+
+env_variables:
+  SPOTIPY_CLIENT_ID: "add419895c1f4fd09ed9638c2858f10e"
+  SPOTIPY_CLIENT_SECRET: "271b39b9429d4a319858ef19db87289a"
+  SPOTIPY_REDIRECT_URI: "https://basicmeter.uc.r.appspot.com/"
